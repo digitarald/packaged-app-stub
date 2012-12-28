@@ -1,0 +1,20 @@
+{
+  "name": "Packaged App",
+  "description": "a packaged app",
+  "launch_path": "/index.html",
+  "version": "1.0",
+  "developer": {
+    "name": "Packaged App Developer",
+    "url": "https://github.com/mykmelez/packaged-app"
+  },
+  "locales": {
+    "en-US": {
+      "name": "Packaged App",
+      "description": "a packaged app"
+    }
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "128": "/style/icons/Blank.png"
+  }
+}

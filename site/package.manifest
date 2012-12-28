@@ -1,0 +1,9 @@
+{
+  "name": "Packaged App",
+  "package_path": "http://localhost/~myk/package.zip",
+  "developer": {
+    "name": "Packaged App Developer",
+    "url": "https://github.com/mykmelez/packaged-app"
+  },
+  "version": "1.0"
+}

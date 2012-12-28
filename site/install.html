@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <p>packaged app installer</p>
+    <script>
+      var manifest = "http://localhost/~myk/package.manifest";
+      var request = navigator.mozApps.installPackage(manifest);
+      request.onsuccess = function() {
+        alert("success: " + this.result.origin);
+      };
+      request.onerror = function() {
+        alert("error: " + this.error.name);
+      };
+    </script>
+  </body>
+</html>
