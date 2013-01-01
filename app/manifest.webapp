@@ -2,15 +2,19 @@
   "name": "Packaged App",
   "description": "a packaged app",
   "launch_path": "/index.html",
-  "version": "1.0",
+  "version": "1.1",
   "developer": {
     "name": "Packaged App Developer",
-    "url": "https://github.com/mykmelez/packaged-app"
+    "url": "https://github.com/mykmelez/packaged-app-stub"
   },
   "locales": {
     "en-US": {
       "name": "Packaged App",
-      "description": "a packaged app"
+      "description": "a packaged app",
+      "developer": {
+        "name": "Packaged App Developer",
+        "url": "https://github.com/mykmelez/packaged-app-stub"
+      }
     }
   },
   "default_locale": "en-US",
