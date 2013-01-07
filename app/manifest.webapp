@@ -2,7 +2,7 @@
   "name": "Packaged App",
   "description": "a packaged app",
   "launch_path": "/index.html",
-  "version": "1.3",
+  "version": "1.4",
   "developer": {
     "name": "Packaged App Developer",
     "url": "https://github.com/mykmelez/packaged-app-stub"
