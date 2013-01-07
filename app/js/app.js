@@ -1,6 +1,7 @@
 document.getElementById("updateButton").addEventListener("click", function() update(), false);
 
 function notify(message) {
+  dump(message + "\n");
   var console = document.getElementById("console");
   console.appendChild(document.createTextNode(message));
   console.appendChild(document.createElement("br"));
@@ -20,7 +21,8 @@ function update() {
         notify("Update available; downloading and installing update…");
 
         self.ondownloadsuccess = function onDownloadSuccess(event) {
-          notify("Download success.");
+          notify("Download success; closing app to complete update…");
+          window.setTimeout(function() window.close(), 3000);
         };
 
         self.ondownloaderror = function onDownloadError() {
@@ -28,8 +30,7 @@ function update() {
         };
 
         self.ondownloadapplied = function onDownloadApplied() {
-          notify("Download applied; closing app to complete install…");
-          window.setTimeout(function() window.close(), 3000);
+          notify("Download applied too soon; I should have quit by now!");
         };
 
         self.download();
